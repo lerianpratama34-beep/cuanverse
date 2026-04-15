@@ -28,13 +28,13 @@ header {
 
 .logo-area img {
   width: 75px;
-  height: 60px;
-  border-radius: 12px;
+  height: 75px;
+  border-radius: 50%;
   background: white;
-  padding: 2px;
-  object-fit: contain;
+  padding: 3px;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.7);
 }
-
 .logo-text {
   font-size: 22px;
   font-weight: bold;
