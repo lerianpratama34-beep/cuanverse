@@ -33,8 +33,9 @@ header {
   background: white;
   padding: 3px;
   object-fit: cover;
-  border: 2px solid rgba(255,255,255,0.7);
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
+
 .logo-text {
   font-size: 22px;
   font-weight: bold;
@@ -42,13 +43,23 @@ header {
 }
 
 /* NAV */
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
+  text-decoration: none;
+  color: white !important;
   margin-left: 0;
   margin-right: 20px;
-}
   font-size: 14px;
   font-weight: bold;
   transition: 0.3s;
+}
+
+nav a:visited {
+  color: white !important;
 }
 
 nav a:hover {
@@ -112,6 +123,8 @@ nav a:hover {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 10px;
+  height: 180px;
+  object-fit: cover;
 }
 
 .card h3 {
@@ -164,48 +177,30 @@ footer {
   margin-top: 50px;
   font-size: 14px;
 }
+
 /* RESPONSIVE NAVBAR (HP) */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
     align-items: flex-start;
+    padding: 15px 20px;
     gap: 10px;
-    padding: 15px 20px;
   }
 
   nav {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-
-  nav a {
-    margin-left: 0;
-    font-size: 14px;
-  }
-
-  .logo-text {
-    font-size: 20px;
-  }
-}
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-  }
-
-  nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; /* INI YANG PENTING */
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 8px;
   }
 
   nav a {
-    margin-left: 0;
+    margin-right: 0;
     font-size: 14px;
+  }
+
+  .logo-text {
+    font-size: 20px;
   }
 }
